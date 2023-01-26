@@ -1,0 +1,15 @@
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\bin\Debug\net6.0\Homework-seminar-OOP-7.exe
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\bin\Debug\net6.0\Homework-seminar-OOP-7.deps.json
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\bin\Debug\net6.0\Homework-seminar-OOP-7.runtimeconfig.json
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\bin\Debug\net6.0\Homework-seminar-OOP-7.dll
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\bin\Debug\net6.0\Homework-seminar-OOP-7.pdb
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.csproj.AssemblyReference.cache
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.AssemblyInfoInputs.cache
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.AssemblyInfo.cs
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.csproj.CoreCompileInputs.cache
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.dll
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\refint\Homework-seminar-OOP-7.dll
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.pdb
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\Homework-seminar-OOP-7.genruntimeconfig.cache
+D:\Алексей\Учеба\Программирование\Java\H-OOP-7\Homework-seminar-OOP-7\obj\Debug\net6.0\ref\Homework-seminar-OOP-7.dll
