@@ -18,7 +18,8 @@ class Point
         maze[point1.x, point1.y] = "S"; // Обозначаем начало лабиринта
         maze[maze.GetLength(0)-3, maze.GetLength(1)-3] = "E"; // Обозначаем конец
         
-        while (coordinate.Count > 0) {
+        while (coordinate.Count > 0) 
+        {
             WavePlus(maze, coordinate);
         }
     }
