@@ -1,6 +1,6 @@
 namespace MoleCs;
 
-public class Mole 
+class Mole 
 {
     int coordinate1;
     int coordinate2;
