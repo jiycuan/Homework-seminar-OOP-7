@@ -16,6 +16,7 @@ class Mole
 
         if (maze[digger.coordinate1, digger.coordinate2] == "#####") 
         {
+            // Если рандомная координата попадает в точку с #, то запускаем движение на 2 клетки в случайном направлении, удаляя по пути #
             Move(maze, digger.coordinate1, digger.coordinate2);
         }
     }
