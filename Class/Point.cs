@@ -6,11 +6,11 @@ class Point
     int count;
 
     public Point(int num1, int num2, int num3)
-   {
+    {
         x = num1;
         y = num2;
-        count = num3;        
-   }
+        count = num3;
+    }
     public void WaveAlgoritm(string[,] maze, Point point1) 
     {
         var coordinate = new Queue<Point>();
