@@ -1,11 +1,16 @@
 namespace PointCs;
 class Point 
 {
-    public int x;
-    public int y;
-    public int count;
+    int x;
+    int y;
+    int count;
 
-    
+    public Point(int num1, int num2, int num3)
+   {
+        x = num1;
+        y = num2;
+        count = num3;        
+   }
     public void WaveAlgoritm(string[,] maze, Point point1) 
     {
         var coordinate = new Queue<Point>();
@@ -24,37 +29,25 @@ class Point
         if (maze[point.x+1, point.y] == " " && point.x+1 < maze.GetLength(0)-1) 
         {
             maze[point.x+1, point.y] = point.count.ToString();
-            Point pointRight = new Point();
-            pointRight.x = point.x+1;
-            pointRight.y = point.y;
-            pointRight.count = point.count+1;
+            Point pointRight = new Point(point.x+1, point.y, point.count+1);
             coordinate.Enqueue(pointRight);
         }
         if (maze[point.x, point.y-1] == " " && point.y-1 > 0) 
         {
             maze[point.x, point.y-1] = point.count.ToString();
-            Point pointDown = new Point();
-            pointDown.x = point.x;
-            pointDown.y = point.y-1;
-            pointDown.count = point.count+1;
+            Point pointDown = new Point(point.x, point.y-1, point.count+1);
             coordinate.Enqueue(pointDown);
         }
         if (maze[point.x-1, point.y] == " " && point.x-1 > 0) 
         {
             maze[point.x-1, point.y] = point.count.ToString();
-            Point pointLeft = new Point();
-            pointLeft.x = point.x-1;
-            pointLeft.y = point.y;
-            pointLeft.count = point.count+1;
+            Point pointLeft = new Point(point.x-1, point.y, point.count+1);
             coordinate.Enqueue(pointLeft);
         }
         if (maze[point.x, point.y+1] == " " && point.y+1 < maze.GetLength(1)-1) 
         {
             maze[point.x, point.y+1] = point.count.ToString();
-            Point pointUp = new Point();
-            pointUp.x = point.x;
-            pointUp.y = point.y+1;
-            pointUp.count = point.count+1;
+            Point pointUp = new Point(point.x, point.y+1, point.count+1);
             coordinate.Enqueue(pointUp);
         }        
     }

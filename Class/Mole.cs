@@ -7,9 +7,12 @@ public class Mole
     
     public void MoleDigg(Mole digger, string[,] maze) 
     { 
-        Random rand = new Random();    
-        digger.coordinate1 = GenerateDigit(rand, 11)*2;
-        digger.coordinate2 = GenerateDigit(rand, 11)*2;
+        Random rand = new Random();
+        // Рандомные координаты при генерации всегда должны быть чётными. Поэтому отправляем в генератор случайных чисел половинку от лабиринта с округлением в большую сторону. 
+        int halfMazeX = 1 + maze.GetLength(0)/2;
+        int halfMazeY = 1 + maze.GetLength(1)/2;
+        digger.coordinate1 = GenerateDigit(rand, halfMazeX)*2; 
+        digger.coordinate2 = GenerateDigit(rand, halfMazeY)*2;
 
         if (maze[digger.coordinate1, digger.coordinate2] == "#####") 
         {
@@ -31,21 +34,24 @@ public class Mole
             coordinate1 = coordinate1-2;
             Move(maze, coordinate1, coordinate2);
         }
-        if (arbiter == 1 && coordinate1+2 < 21) {
+        if (arbiter == 1 && coordinate1+2 < 21) 
+        {
             maze[coordinate1, coordinate2] = " ";
             maze[coordinate1+1, coordinate2] = " ";
             maze[coordinate1+2, coordinate2] = " ";
             coordinate1 = coordinate1+2;
             Move(maze, coordinate1, coordinate2);
         }
-        if (arbiter == 2 && coordinate2-2 > 0) {
+        if (arbiter == 2 && coordinate2-2 > 0) 
+        {
             maze[coordinate1, coordinate2] = " ";
             maze[coordinate1, coordinate2-1] = " ";
             maze[coordinate1, coordinate2-2] = " ";
             coordinate2 = coordinate2-2;
             Move(maze, coordinate1, coordinate2);
         }
-        if (arbiter == 3 && coordinate2+2 < 21) {
+        if (arbiter == 3 && coordinate2+2 < 21) 
+        {
             maze[coordinate1, coordinate2] = " ";
             maze[coordinate1, coordinate2+1] = " ";
             maze[coordinate1, coordinate2+2] = " ";
@@ -53,9 +59,9 @@ public class Mole
             Move(maze, coordinate1, coordinate2);
         }
     }
+    // Метод для генерации рандомного числа
     static int GenerateDigit(Random rng, int nums)
     {
         return rng.Next(nums);
     }
-
 }
